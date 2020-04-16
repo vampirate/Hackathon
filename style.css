@@ -62,12 +62,11 @@ body {
 
 .loginInput:focus {
     border-color: #777;
-    color: #000;
     background: transparent;
     outline: 0;
     transition: 1s;
     border-bottom-color: dodgerblue;
-    color: black;
+    color: white;
 }
 
 .loginInput:focus::placeholder {
