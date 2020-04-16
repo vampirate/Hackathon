@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>2020 Tour de France Hackathon</title>
     </head>
@@ -8,13 +9,39 @@
     <body>
         <div class="sidenav">
             <a href="home.html">Home</a>
-            <a href="Mediapage.html">Media</a>
-            <a href="Socialpage.html">Social</a>
+            <button class="dropdown-btn">Media<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="Mediapage.html">Camera Angles</a>
+                <a href="Mediapage.html">Live Chat</a>
+                <a href="Mediapage.html">Live Broadcast</a>
+            </div>  
+            <button class="dropdown-btn">Social<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="Socialpage.html">Tinder</a>
+                <a href="Socialpage.html">Blogs</a>
+            </div> 
         </div>
         <div class="main">
             <h1>Home Page</h1>
             <p>Testing</p>
         </div>
+
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+                });
+            }
+        </script>
     </body>
 
 </html>
