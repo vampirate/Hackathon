@@ -1,5 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
+    background-color: lightgrey;
 }
   
 .sidenav {
@@ -38,12 +39,14 @@ body {
     border: none;
     box-shadow: 2px 4px 8px black;
     border-radius: 24px;
+    width: 300px;
+    background-color: #111;
 }
 
 .loginH1 {
     padding-top: 30px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .loginInput {
@@ -54,7 +57,7 @@ body {
     display: block;
     margin: auto;
     position: relative;
-    color: black;
+    color: white;
 }
 
 .loginInput:focus {
