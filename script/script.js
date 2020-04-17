@@ -1,10 +1,7 @@
 function getUrlVars() {
-    var vari = {};
+    var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vari[key] = value;
+        vars[key] = value;
     });
-    return vari;
+    return vars;
 }
-var number = getUrlVars()["loggedin"];
-
-alert(number)
